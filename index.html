@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>YJOC Indonesia</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,6 +31,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Element side by side for Grouping Chapter YJOC-->
+    <style type="text/css">
+        .float-child {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            border: 2px solid white;
+        }  
+    </style>
+
 </head>
 
 <body id="page-top" class="index">
@@ -40,7 +50,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" style="margin-top: 15px" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -50,10 +60,10 @@
                  <img src="https://static.wixstatic.com/media/028953_bea3a79e3ce644a2acc69eaf4fcc6ce8.png/v1/fill/w_207,h_149,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/028953_bea3a79e3ce644a2acc69eaf4fcc6ce8.png" 
                  alt="" style="width:138px;height:99px;object-fit:cover;object-position:50% 50%">
                 -->
-                <a class="navbar-brand" href="#">
+                <a class="" href="#" style="margin-left:15px">
                     <img src="https://static.wixstatic.com/media/028953_bea3a79e3ce644a2acc69eaf4fcc6ce8.png/v1/fill/w_207,h_149,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/028953_bea3a79e3ce644a2acc69eaf4fcc6ce8.png" 
-                    width="30" height="30" alt="">
-                  </a>
+                    width="65" height="65" alt="">
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,17 +73,17 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                    <!--<li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li> -->
+                    <li> <!-- Porfolio == Galerry --> 
+                        <a class="page-scroll" href="#portfolio">Galerry</a>
                     </li>
+                   <!-- <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li> -->
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -88,14 +98,14 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">Welcome to Our Commumunity!</div>
+                <div class="intro-heading" style="font-size:50px;">Yamaha Jupiter Owners Community</div>
+                <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
+    <!-- Services Section 
     <section id="services">
         <div class="container">
             <div class="row">
@@ -131,105 +141,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section>  -->
 
     <!-- About Section -->
     <section id="about">
@@ -237,23 +149,116 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Yamaha Jupiter Owners Community</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="timeline">
+                    <p class="text-muted" style="text-align:justify;"><b style="color: #fed136;">YJOC</b> dibentuk pada tanggal 7 Juli 2005 dari sebuah mailing list 
+                        di Yahoogroups yaitu mailing list <a href=mailto:yamaha-jupiter@yahoogroups.com>yamaha-jupiter@yahoogroups.com</a>.
+                        Mailing list ini dibuat pada tahun 2002 dan pertama kali adalah sebagai sarana dan diskusi antar 
+                        pemilik / pengguna dan penggemar motor yamaha khususnya yamaha jupiter dimana pada 
+                        saat itu belum banyaknya forum online yang dapat memberikan informasi-informasi untuk 
+                        menjelaskan produk yamaha khususnya tentang yamaha jupiter. Selanjutnya pada bulan Juli 
+                        2005 untuk menunjang informasi atau berita-berita tentang yamaha jupiter lebih baik 
+                        lagi maka dibuatlah forum diskusi yamaha jupiter dengan dibuatkanya situs <a href=www.yjoc.web.id>www.yjoc.web.id</a>
+                    </p>
+
+                    <p class="text-muted" style="text-align:justify;">Dari sejak pertama dibentuknya mailing list <a href=mailto:yamaha-jupiter@yahoogroups.com>yamaha-jupiter@yahoogroups.com</a> 
+                        dan forum diskusi yamaha jupiter dengan situs <a href=www.yjoc.web.id>www.yjoc.web.id</a> sebagai wadah komunikasi pemilik 
+                        atau penggemar motor yamaha jupiter untuk mendapatkan informasi secara konsisten terus berkembang 
+                        dikelola secara konsisten oleh para administrator yang profesional dan pemerhati teknologi 
+                        informasi dan komputerisasi.
+                    </p>
+
+                    <p class="text-muted" style="text-align:justify;">
+                        Terbukti dengan meningkatnya anggota mailing list dan member forum dan juga pengunjung/visitor pada 
+                        forum diskusi yamaha jupiter. Anggota pada forum yamaha jupiter (belum termasuk pengunjung situs) 
+                        telah mencapai lebih dari 2200 anggota (s/d Maret 2008). Ini menunjukan informasi-informasi yang 
+                        terdapat pada forum tersebut sangat dicari oleh masyarakat khususnya bagi pemilik atau penggemar 
+                        motor yamaha jupiter.
+                    </p>
+
+                    <p class="text-muted" style="text-align:justify;">
+                        Dari sini bisa terlihat bahwa <b style="color: #fed136;">YJOC</b> merupakan suatu pasar yang potensial untuk penyampaian informasi, 
+                        produk dan layanan yang berhubungan dengan otomotif khususnya kendaraan bermotor yamaha jupiter atau 
+                        lainnya. Sebuah komunitas yang mana didalamnya terdapat beraneka ragam fungsi dan jenjang profesi 
+                        dari anak sekolah sampai beberapa orang eksekutif muda dengan beragam bidang khusus ikut berpartisipasi 
+                        memberikan informasi-informasi yang berguna.
+                    </p>
+                    <p class="text-muted" style="text-align:justify;">
+                        Ajang kumpul-kumpul para anggota <b style="color: #fed136;">YJOC</b> atau biasa yang kami sebut Kopi Darat merupakan suatu ajang 
+                        pertemuan bagi para member <b style="color: #fed136;">YJOC</b> secara langsung dan juga merupakan salah satu agenda rutin yang 
+                        selalu dilaksanakan setiap hari Sabtu pada minggu 1 & 3 setiap bulannya. Bertempat di Parkir Timur 
+                        Senayan (Depan Hotel Sultan), pukul 16:00 s/d Selesai.
+                    </p>
+                    <p class="text-muted" style="text-align:justify;">
+                        Sampai saat ini sudah ada beberapa anggota kami yang tersebar mulai dari barat Indonesia (Medan) 
+                        sampai dengan Timur Indonesia (Manado) dan sampai dengan bulan Juni 2008 telah terbentuk chapter-chapter 
+                        <b style="color: #fed136;">YJOC</b> di :
+                    </p>
+
+                    <div class="float-container">
+
+                        <div class="float-child">
+                          <p class="text-muted">1 Jabodetabek<br>
+                            2 Chapter Pusat<br>                                    
+                            3 Chapter Barat<br>                                     
+                            4 Chapter Utara<br>                                     
+                            5 Chapter Selatan<br>                                  
+                            6 Chapter Timur-Bekasi (Timbek)<br>         
+                            7 Chapter Bogor<br>                                    
+                            8 Chapter Depok<br>                                   
+                            9 Chapter Tangerang<br>                            
+                            10 Chapter Yogyakarta<br>                          
+                            11 Chapter Pandeglang<br>                        
+                            12 Chapter Surabaya<br>                             
+                            13 Chapter Kediri<br>                                   
+                            14 Chapter Malang<br>
+                            15 Chapter Kudus (YJC Kudus)
+                        </p>
+                        </div>
+                        
+                        <div class="float-child">
+                            <p class="text-muted">16 Chapter Balikpapan<br>
+                                17 Chapter Manado<br>
+                                18 Chapter Bandung<br>
+                                19 Chapter Surabaya<br>
+                                20 Chapter Pekanbaru (MRC Pekanbaru)<br>
+                                21 Chapter Palembang + PJR Palembang<br>
+                                22 Chapter Tanjung Pinang<br>
+                                23 Chapter Balikpapan<br>
+                                24 Chapter Bukit Tinggi<br>
+                                25 Chapter Bukit Tinggi<br>
+                                26 Chapter Lampung<br>
+                                27 Chapter Kendari<br>
+                                28 Chapter Sampit
+                            </p>
+                        </div>
+                        
+                      </div>
+                    
+                      <!-- <ul class="timeline">
                         <li>
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4>7 Juli 2005</h4>
+                                    <h4 class="subheading">Awal Terbentuknya YJOC</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Sebuah mailing list 
+                                        di Yahoogroups yaitu mailing list <a href=mailto:yamaha-jupiter@yahoogroups.com>yamaha-jupiter@yahoogroups.com</a>.
+                                        Mailing list ini dibuat pada tahun 2002 dan pertama kali adalah sebagai sarana dan diskusi antar 
+                                        pemilik / pengguna dan penggemar motor yamaha khususnya yamaha jupiter dimana pada 
+                                        saat itu belum banyaknya forum online yang dapat memberikan informasi-informasi untuk 
+                                        menjelaskan produk yamaha khususnya tentang yamaha jupiter. Selanjutnya pada bulan Juli 
+                                        2005 untuk menunjang informasi atau berita-berita tentang yamaha jupiter lebih baik 
+                                        lagi maka dibuatlah forum diskusi yamaha jupiter dengan dibuatkanya situs <a href=www.yjoc.web.id>www.yjoc.web.id</a>
+                                        Dari sejak pertama dibentuknya mailing list yamaha-jupiter@yahoogroups.com dan forum diskusi yamaha jupiter dengan situs www.yjoc.web.id sebagai wadah komunikasi pemilik atau penggemar motor yamaha jupiter untuk mendapatkan informasi secara konsisten terus berkembang dikelola secara konsisten oleh para administrator yang profesional dan pemerhati teknologi informasi dan komputerisasi.
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -306,13 +311,111 @@
                                     <br>Story!</h4>
                             </div>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
+    <!-- Portfolio[Gallery] Grid Section -->
+        <section id="portfolio" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Gallery</h2>
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Round Icons</h4>
+                            <p class="text-muted">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Startup Framework</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Treehouse</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Golden</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Escape</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Dreams</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Team Section 
     <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -374,9 +477,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Clients Aside -->
+    <!-- Clients Aside
     <aside class="clients">
         <div class="container">
             <div class="row">
@@ -402,7 +505,7 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside>   -->
 
     <section id="contact">
         <div class="container">
@@ -452,7 +555,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">Copyright &copy; YJOC Indonesia 2022</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -653,7 +756,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
