@@ -22,8 +22,8 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
 
-ini_set("SMTP","mail.yjoc.web.id");
-ini_set("smtp_port","993");
+/*ini_set("SMTP","mail.yjoc.web.id");
+ini_set("smtp_port","993");*/
 
 mail($to,$email_subject,$email_body,$headers);
 return true;			
