@@ -39,10 +39,11 @@ $headers = 'From: noreply@yjoc.web.id' . "\r\n" .
 ini_set("smtp_port","993");*/
 
 mail($to,$email_subject,$email_body,$headers);
-if(!$mail) {
+return true;
+/*if(!mail) {
     echo "Mailer Error: ";
 } else {
     echo "Message has been sent successfully";
     return true;
-}
+}*/
 ?>
