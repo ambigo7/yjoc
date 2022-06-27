@@ -16,14 +16,14 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 	
 // Create the email and send the message 'admin@yjoc.web.id'
-$to = 'dendirzkptr@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'admin@yjoc.web.id'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website YJOC Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
 
-ini_set("SMTP","ssl://smtp.gmail.com");
-ini_set("smtp_port","465");
+ini_set("SMTP","mail.yjoc.web.id");
+ini_set("smtp_port","993");
 
 mail($to,$email_subject,$email_body,$headers);
 return true;			
