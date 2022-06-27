@@ -40,9 +40,9 @@ ini_set("smtp_port","993");*/
 
 mail($to,$email_subject,$email_body,$headers);
 if(!$mail) {
-    echo “Mailer Error: ”;
+    echo "Mailer Error: ";
 } else {
-    echo “Message has been sent successfully ”;
+    echo "Message has been sent successfully";
     return true;
 }
 ?>
